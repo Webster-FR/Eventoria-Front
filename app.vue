@@ -1,6 +1,13 @@
+<script lang="ts" setup>
+const { setLocale } = useI18n();
+</script>
+
 <template>
   <div>
     <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
