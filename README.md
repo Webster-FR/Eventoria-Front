@@ -1,75 +1,62 @@
-# Nuxt 3 Minimal Starter
+# Eventoria
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Table of content
+- [Road map](#road-map)
+  - [Authentication System](#authentication-system)
+  - [Pages & events](#pages--events)
+  - [Notifications](#notifications)
 
-## Setup
+## Road map
+All tasks must be delivered before or by the given deadline. Any delay will be followed by a belt-tightening by ALL team members (target excluded).
 
-Make sure to install the dependencies:
+### Authentication System
+**Deadlines**: 
+- Front-End: `30 July 2024`
+- Back-End: `12 July 2024`
 
-```bash
-# npm
-npm install
+> **Notes**:
+> Think to handle e-mail sending.
 
-# pnpm
-pnpm install
+| Feature                | Done |
+|:-----------------------|:----:|
+| Banned emails          |  ❌   |
+| User registration      |  ❌   |
+| Authentication         |  ❌   |
+| OTP                    |  ❌   |
+| Reset password         |  ❌   |
+| Settings: User name    |  ❌   |
+| Settings: Display name |  ❌   |
+| Settings: Password     |  ❌   |
+| Settings: Avatar       |  ❌   |
 
-# yarn
-yarn install
+### Pages & events
+**Deadlines**:
+- Front-End: `?`
+- Back-End: `?`
 
-# bun
-bun install
-```
+> **Notes**:
+> Think to send notifications.
 
-## Development Server
+| Feature                 | Done |
+|:------------------------|:----:|
+| Page management         |  ❌   |
+| Commentary (pages)      |  ❌   |
+| Page reports            |  ❌   |
+| Admin actions on page   |  ❌   |
+| ---                     | ---  |
+| Event management        |  ❌   |
+| Commentary (events)     |  ❌   |
+| Event report            |  ❌   |
+| Participation indicator |  ❌   |
+| Admin actions on event  |  ❌   |
 
-Start the development server on `http://localhost:3000`:
+### Notifications
+**Deadlines**:
+- Front-End: `?`
+- Back-End: `?`
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+| Feature                   | Done |
+|:--------------------------|:----:|
+| Different types           |  ❌   |
+| Detect when not read      |  ❌   |
+| Badge of amount on unread |  ❌   |
