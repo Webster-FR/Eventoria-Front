@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>{{ $t('pages.about') }}</h1>
+  <h1>Panel Admin</h1>
 </template>
 
 <style scoped>
