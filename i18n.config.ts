@@ -4,17 +4,19 @@ export default defineI18nConfig(() => ({
   messages: {
     fr: {
       welcome: 'Bienvenue dans Nuxt !',
-      pages: {
-        home: 'Accueil',
-        about: 'À propos'
-      }
+      themes: {
+        dark: 'Sombre',
+        light: 'Clair',
+        system: 'Système',
+      },
     },
     en: {
       welcome: 'Welcome to Nuxt!',
-      pages: {
-        home: 'Home',
-        about: 'About'
-      }
+      themes: {
+        dark: 'Dark',
+        light: 'Light',
+        system: 'System',
+      },
     }
   }
 }));
