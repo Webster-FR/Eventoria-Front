@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@iconoir/vue':
+        specifier: ^7.7.0
+        version: 7.7.0(vue@3.4.31(typescript@5.5.2))
       '@nuxtjs/color-mode':
         specifier: ^3.4.2
         version: 3.4.2(magicast@0.3.4)(rollup@4.18.0)
@@ -568,6 +571,15 @@ packages:
     resolution: {integrity: sha512-AiXO/bfe9bmxBjxxtYxFAXGZvMaN5s8kO+jBHAJCON8rJoB5YS/D6X7ZNc6XQkuHNmyl4CYaMI1fJ/Gn27RGGw==}
     engines: {node: '>=6'}
     hasBin: true
+
+  '@iconoir/vue@7.7.0':
+    resolution: {integrity: sha512-EvJK80DUGpCFd2MZsC5K6duv/h4zafruBSQYV9F5b+kJOrdWNCHxEHpwbUwjsI35GpSzMD0N2jAR86s3YTsMmw==}
+    peerDependencies:
+      '@vue/composition-api': '>=1.0.0-rc.1'
+      vue: ^2.6.11 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
 
   '@internationalized/date@3.5.4':
     resolution: {integrity: sha512-qoVJVro+O0rBaw+8HPjUB1iH8Ihf8oziEnqMnvhJUSuVIrHOuZ6eNLHNvzXJKUvAtaDiqMnRlg8Z2mgh09BlUw==}
@@ -4420,6 +4432,11 @@ snapshots:
       long: 5.2.3
       protobufjs: 7.3.2
       yargs: 17.7.2
+
+  '@iconoir/vue@7.7.0(vue@3.4.31(typescript@5.5.2))':
+    dependencies:
+      vue: 3.4.31(typescript@5.5.2)
+      vue-demi: 0.14.8(vue@3.4.31(typescript@5.5.2))
 
   '@internationalized/date@3.5.4':
     dependencies:
