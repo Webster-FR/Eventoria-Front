@@ -1,8 +1,16 @@
 export default {
-  themes: {
-    dark: "Sombre",
-    light: "Clair",
-    system: "Système",
+  generics: {
+    themes: {
+      dark: "Sombre",
+      light: "Clair",
+      system: "Système",
+    },
+    toasts: {
+      internalServerError: {
+        title: "Oups... 💢",
+        description: "Une erreur interne est survenue, réessayez plus tard. Si le problème persiste, contactez un administrateur.",
+      },
+    }
   },
   pages: {
     auth: {
@@ -25,6 +33,13 @@ export default {
           password: {
             label: "Mot de passe",
             placeholder: "Ex : ·············"
+          },
+          termsAndConditions: "J'accepte les conditions d'utilisation."
+        },
+        toasts: {
+          userCreated: {
+            title: "Félicitations 🎉",
+            description: "Votre compte a été créé avec succès ! Avant de pouvoir jouir pleinement de l'application, veuillez vérifier votre e-mail.",
           }
         },
         alreadyRegistered: "J'ai déjà un compte !"
