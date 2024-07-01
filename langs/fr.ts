@@ -10,12 +10,18 @@ export default {
         title: "Oups... 💢",
         description: "Une erreur interne est survenue, réessayez plus tard. Si le problème persiste, contactez un administrateur.",
       },
+    },
+    buttons: {
+      back: "Retour",
+      previous: "Précédent",
+      next: "Suivant",
     }
   },
   pages: {
     auth: {
       register: {
         title: "Inscription",
+        description: "Nous vous souhaitons la bienvenue sur Eventoria et sommes heureux de voir que vous souhaitez contribuer à faire vivre notre plateforme. Vous n'êtes plus qu'à quelques clics de la perfection !",
         btn: "Créer mon compte",
         inputs: {
           username: {

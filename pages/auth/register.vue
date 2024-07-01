@@ -34,7 +34,7 @@ const handleSubmit = async ({ username, displayName, email, password }: GenericO
     username,
     displayName,
     email,
-    password: password.split('').map((c: string) => '·').join(''),
+    password: password.split('').map(() => '·').join(''),
   });
 };
 </script>
@@ -42,6 +42,7 @@ const handleSubmit = async ({ username, displayName, email, password }: GenericO
 <template>
   <AuthCard :schema="schema" @submit="handleSubmit" :submit-disabled="!termsAndConditions">
     <template #title>{{ $t('pages.auth.register.title') }}</template>
+    <template #description>{{ $t("pages.auth.register.description") }}</template>
     <template #formContent>
       <FormField name="username" v-slot="{ componentField }">
         <FormItem>
