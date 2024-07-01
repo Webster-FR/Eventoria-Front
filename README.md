@@ -9,18 +9,23 @@
 ## Road map
 All tasks must be delivered before or by the given deadline. Any delay will be followed by a belt-tightening by ALL team members (target excluded).
 
+> **Legend**:  
+> ❌ -> No done;  
+> ⏳ -> Waiting for the back-end;  
+> ✅ -> Done.
+
 ### Authentication System
 **Deadlines**: 
 - Front-End: `30 July 2024`
 - Back-End: `12 July 2024`
 
-> **Notes**:
+> **Notes**:  
 > Think to handle e-mail sending.
 
 | Feature                | Done |
 |:-----------------------|:----:|
 | Banned emails          |  ❌   |
-| User registration      |  ❌   |
+| User registration      |  ⏳   |
 | Authentication         |  ❌   |
 | OTP                    |  ❌   |
 | Reset password         |  ❌   |
@@ -34,7 +39,7 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 - Front-End: `?`
 - Back-End: `?`
 
-> **Notes**:
+> **Notes**:  
 > Think to send notifications.
 
 | Feature                 | Done |
