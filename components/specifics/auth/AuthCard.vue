@@ -3,13 +3,14 @@ import {Button} from "~/components/ui/button";
 import {Card, CardHeader, CardContent, CardTitle} from "~/components/ui/card";
 import {type TypedSchema, useForm} from "vee-validate";
 
-const { schema } = defineProps<{
+const props = defineProps<{
+  submitDisabled?: boolean;
   schema: TypedSchema<TInput, TOutput>;
 }>();
 const emit = defineEmits(['submit']);
 
 const { handleSubmit } = useForm({
-  validationSchema: schema,
+  validationSchema: props.schema,
 });
 const onSubmit = handleSubmit((values) => emit('submit', values));
 </script>
@@ -28,7 +29,7 @@ const onSubmit = handleSubmit((values) => emit('submit', values));
           <slot name="formContent" />
         </div>
 
-        <Button type="submit">
+        <Button type="submit" :disabled="submitDisabled">
           <slot name="action" />
         </Button>
         <Button type="button" variant="link" as-child>
