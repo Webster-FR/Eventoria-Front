@@ -49,6 +49,29 @@ export default {
           }
         },
         alreadyRegistered: "J'ai déjà un compte !"
+      },
+      login: {
+        title: "Connexion",
+        description: "Re-bonjour, nous espérons que tout va bien depuis votre dernier passage ? Heureux de voir que notre plateforme vous plaît, connectez-vous et découvrez les derniers ajouts !",
+        btn: "Accéder à mon compte",
+        inputs: {
+          username: {
+            label: "Nom d'utilisateur",
+            placeholder: "Ex : john.doe"
+          },
+          password: {
+            label: "Mot de passe",
+            placeholder: "Ex : ·············"
+          },
+          keepMeLoggedIn: "Se souvenir de moi."
+        },
+        toasts: {
+          userCreated: {
+            title: "Bon retour 🎉",
+            description: "Ça faisait longtemps que nous ne vous avions pas vu ! Découvrez les derniers ajouts sur la plateforme 😊",
+          }
+        },
+        notRegistered: "Je n'ai pas de compte !"
       }
     }
   },

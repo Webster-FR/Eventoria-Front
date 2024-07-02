@@ -49,6 +49,29 @@ export default {
           }
         },
         alreadyRegistered: "I already have an account!"
+      },
+      login: {
+        title: "Login",
+        description: "Hello again, we hope all is well since your last visit? Glad to see you're enjoying our platform, log on and check out the latest additions!",
+        btn: "Go to my account",
+        inputs: {
+          username: {
+            label: "Username",
+            placeholder: "Ex: john.doe"
+          },
+          password: {
+            label: "Password",
+            placeholder: "Ex: ·············"
+          },
+          keepMeLoggedIn: "Keep me logged in."
+        },
+        toasts: {
+          userLoggedIn: {
+            title: "Welcome back 🎉",
+            description: "It's been a long time since we've seen you! Check out the latest additions to the platform 😊",
+          }
+        },
+        notRegistered: "I need an account!"
       }
     }
   },
