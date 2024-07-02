@@ -10,7 +10,7 @@
 All tasks must be delivered before or by the given deadline. Any delay will be followed by a belt-tightening by ALL team members (target excluded).
 
 > **Legend**:  
-> ❌ -> No done;  
+> ❌ -> Not done;  
 > ⏳ -> Waiting for the back-end;  
 > ✅ -> Done.
 
