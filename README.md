@@ -28,7 +28,7 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 | User registration      |  ⏳   |
 | Authentication         |  ⏳   |
 | OTP                    |  ⏳   |
-| Reset password         |  ❌   |
+| Reset password         |  ⏳   |
 | Settings: User name    |  ❌   |
 | Settings: Display name |  ❌   |
 | Settings: Password     |  ❌   |

@@ -87,6 +87,32 @@ export default {
             description: "Il semblerait que le code que tu as donné n'est pas le bon. Vérifie tes e-mails et réessaye !",
           },
         }
+      },
+      resetPassword: {
+        title: "Réinitialiser mon mot de passe",
+        description: "Le mot de passe est un point clé pour sécuriser votre compte. Ne prenez pas cette étape à la légère !",
+        btn: "Réinitialiser",
+        inputs: {
+          password: {
+            label: "Nouveau mot de passe",
+            placeholder: "Ex : ··········",
+          },
+          confirm: {
+            label: "Confirmation",
+            placeholder: "Ex : ··········",
+          },
+          disconnectFromEverywhere: "Me déconnecter de tous mes appareils."
+        },
+        toasts: {
+          passwordUpdated: {
+            title: "Félicitations 🎉",
+            description: "Votre mot de passe a été mis à jour ! Vous pouvez désormais vous connecter avec votre nouveau mot de passe 👍",
+          },
+          inconsistent: {
+            title: "Oh non 💢",
+            description: "Les mots de passes ne sont pas identiques ! Veuillez corriger l'erreur avant de réessayer.",
+          }
+        },
       }
     }
   },

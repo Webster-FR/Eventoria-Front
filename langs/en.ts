@@ -87,6 +87,32 @@ export default {
             description: "It seems that the code you gave is not the right one. Check your e-mails and try again!",
           },
         }
+      },
+      resetPassword: {
+        title: "Reset my password",
+        description: "Your password is the key to securing your account. Don't take this step lightly!",
+        btn: "Reset",
+        inputs: {
+          password: {
+            label: "New password",
+            placeholder: "Ex: ··········",
+          },
+          confirm: {
+            label: "Confirmation",
+            placeholder: "Ex: ··········",
+          },
+          disconnectFromEverywhere: "Disconnect me from every devices."
+        },
+        toasts: {
+          passwordUpdated: {
+            title: "Congratulations 🎉",
+            description: "You password has been updated! You can now login with your new password 👍",
+          },
+          inconsistent: {
+            title: "Oh no 💢",
+            description: "The passwords are not identical! Please correct the error before trying again.",
+          }
+        },
       }
     }
   },
