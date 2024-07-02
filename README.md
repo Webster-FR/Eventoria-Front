@@ -26,7 +26,7 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 |:-----------------------|:----:|
 | Banned emails          |  ❌   |
 | User registration      |  ⏳   |
-| Authentication         |  ❌   |
+| Authentication         |  ⏳   |
 | OTP                    |  ❌   |
 | Reset password         |  ❌   |
 | Settings: User name    |  ❌   |
