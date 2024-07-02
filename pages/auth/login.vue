@@ -18,6 +18,10 @@ const localePath = useLocalePath();
 const { t } = useI18n();
 const { toast } = useToast();
 
+useHead({
+  title: `Eventoria · ${t("pages.auth.login.title")}`,
+});
+
 const schema = toTypedSchema(z.object({
   username: z.string().min(1).regex(userRegExp),
   password: z.string().min(1).regex(passwordRegExp),

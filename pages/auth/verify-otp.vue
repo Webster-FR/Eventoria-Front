@@ -15,6 +15,10 @@ const localePath = useLocalePath();
 const { toast } = useToast();
 const { t } = useI18n();
 
+useHead({
+  title: `Eventoria · ${t("pages.auth.otp.title")}`,
+});
+
 const canResend = ref<boolean>(false);
 const value = ref<string[]>([]);
 const handleComplete = () => {

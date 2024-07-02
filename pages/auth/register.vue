@@ -14,6 +14,11 @@ definePageMeta({
 
 const localePath = useLocalePath();
 const { t } = useI18n();
+const { toast } = useToast();
+
+useHead({
+  title: `Eventoria · ${t("pages.auth.register.title")}`,
+});
 
 const schema = toTypedSchema(z.object({
   username: z.string().min(1).regex(userRegExp),
@@ -21,7 +26,6 @@ const schema = toTypedSchema(z.object({
   email: z.string().email().min(1),
   password: z.string().min(1).regex(passwordRegExp),
 }));
-const { toast } = useToast();
 
 const termsAndConditions = ref<boolean>(false);
 
