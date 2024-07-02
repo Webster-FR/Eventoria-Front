@@ -72,6 +72,21 @@ export default {
           }
         },
         notRegistered: "Je n'ai pas de compte !"
+      },
+      otp: {
+        title: "Vérifiez votre e-mail",
+        description: "Dernière étape avant de pouvoir jouir pleinement de notre plateforme et de toutes ses fonctionnalités. Vous avez reçu un e-mail comprenant le code de vérification de votre compte.",
+        noCodeReceived: "Je n'ai pas reçu de code.",
+        toasts: {
+          emailVerified: {
+            title: "Félicitations 🎉",
+            description: "Ton adresse e-mail a été validée 💪 Tu peux désormais utiliser la plateforme comme bon te semble !",
+          },
+          wrongOTP: {
+            title: "Oh non 💢",
+            description: "Il semblerait que le code que tu as donné n'est pas le bon. Vérifie tes e-mails et réessaye !",
+          },
+        }
       }
     }
   },
