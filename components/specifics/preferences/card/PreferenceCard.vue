@@ -7,7 +7,7 @@
       <CardTitle><slot name="title" /></CardTitle>
     </CardHeader>
     <Separator />
-    <CardContent class="p-6">
+    <CardContent class="p-0 divide-y">
       <slot />
     </CardContent>
   </Card>
