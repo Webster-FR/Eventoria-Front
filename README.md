@@ -30,13 +30,18 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 | Authentication         |     ⏳     |
 | OTP                    |     ⏳     |
 | Reset password         |     ⏳     |
+| ---                    |    ---    |
 | Landing page           |    🟠     |
+| ---                    |    ---    |
 | User profile           |     ❌     |
+| ---                    |    ---    |
 | Settings               |    🟠     |
+| ---                    |    ---    |
 | Settings: User name    |     ❌     |
 | Settings: Display name |     ❌     |
 | Settings: Password     |     ❌     |
 | Settings: Avatar       |     ❌     |
+| ---                    |    ---    |
 | Settings: Language     |     ✅     |
 | Settings: Theme        |     ✅     |
 
