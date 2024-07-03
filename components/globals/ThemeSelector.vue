@@ -2,17 +2,10 @@
 import {Button} from "~/components/ui/button";
 import {DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem} from "~/components/ui/dropdown-menu";
 import {HalfMoon, SunLight} from "@iconoir/vue";
+import {useTheme} from "~/composables/theme.composable";
 
 const colorMode = useColorMode();
-
-const theme = computed(_ => {
-  switch (colorMode.preference) {
-    case 'system':
-      return window?.matchMedia('[preferred-color-scheme: dark]') ? 'dark' : 'light';
-    default:
-      return colorMode.preference;
-  }
-});
+const theme = computed(_ => useTheme());
 </script>
 
 <template>
