@@ -1,19 +1,39 @@
 <script setup lang="ts">
-import {useSwitchLocalePath} from "#i18n";
+import {useSwitchLocalePath, useI18n} from "#i18n";
+import locales from "~/langs";
 import {Button} from "~/components/ui/button";
+import {DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem} from "~/components/ui/dropdown-menu";
+import {NavArrowDown} from "@iconoir/vue";
+
+type LocaleDisplayFormat = 'short' | 'long';
+
+const { format } = defineProps<{
+  format?: LocaleDisplayFormat;
+  disableArrow?: boolean;
+}>();
 
 const switchLocale = useSwitchLocalePath();
+const { locale } = useI18n();
+// @ts-ignore
+const selectedLanguage = computed(_ => format === 'short' ? locale.value.toUpperCase() : locales[locale.value]);
 </script>
 
 <template>
-  <div class="flex">
-    <Button variant="link" class="p-3" as-child>
-      <NuxtLink :to="switchLocale('fr')" data-lang-link active-class="active">FR</NuxtLink>
-    </Button>
-    <Button variant="link" class="p-3" as-child>
-      <NuxtLink :to="switchLocale('en')" data-lang-link active-class="active">EN</NuxtLink>
-    </Button>
-  </div>
+  <DropdownMenu>
+    <DropdownMenuTrigger>
+      <Button variant="ghost" :class="{ 'p-3': disableArrow }">
+        <span>{{ selectedLanguage }}</span>
+        <NavArrowDown v-if="!disableArrow" class="ml-2" />
+      </Button>
+    </DropdownMenuTrigger>
+    <DropdownMenuContent>
+      <DropdownMenuGroup>
+        <DropdownMenuItem v-for="(lang, key) in locales" :key="key" as-child>
+          <NuxtLink :to="switchLocale(key)">{{ lang }}</NuxtLink>
+        </DropdownMenuItem>
+      </DropdownMenuGroup>
+    </DropdownMenuContent>
+  </DropdownMenu>
 </template>
 
 <style scoped lang="sass">

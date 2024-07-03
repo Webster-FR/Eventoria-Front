@@ -17,6 +17,21 @@ export default {
       next: "Next",
     }
   },
+  navigation: {
+    cta: "Join us",
+    links: {
+      explore: {
+        trigger: "Explore"
+      },
+      pricing: "Pricing",
+      about: "About"
+    },
+    userDropdown: {
+      profile: "My profile",
+      preferences: "Preferences",
+      logout: "Logout",
+    }
+  },
   pages: {
     auth: {
       register: {

@@ -12,6 +12,7 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 > **Legend**:  
 > ❌ -> Not done;  
 > ⏳ -> Waiting for the back-end;  
+> 🟠 -> In progress;  
 > ✅ -> Done.
 
 ### Authentication System
@@ -29,7 +30,7 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 | Authentication         |  ⏳   |
 | OTP                    |  ⏳   |
 | Reset password         |  ⏳   |
-| Landing page           |  ❌   |
+| Landing page           |  🟠  |
 | User profile           |  ❌   |
 | Settings               |  ❌   |
 | Settings: User name    |  ❌   |
