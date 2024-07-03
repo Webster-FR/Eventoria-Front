@@ -1,2 +1,3 @@
-export const passwordRegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[&é"'(§è!çà)\-°_?,.;/:+=\\^¨$`£ù%µπÉÈÀÇâêôûàèòùãñõ])[A-Za-z0-9&é"'(§è!çà)\-°_?,.;/:+=\\^¨$`£ù%µπÉÈÀÇâêôûàèòùãñõ]{8,}$/;
-export const userRegExp = /^(?=.*[a-z])[a-z._]{8,24}$/
+export const passwordRegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[_&é"'(§è!çà)\-°?,.;/:+=\\^¨$`£ù%µπÉÈÀÇâêôûàèòùãñõ]).{8,}$/;
+export const usernameRegExp = /^(?=.*[a-z])[a-z._]{8,24}$/;
+export const displayNameRegExp = /^[\w.\-]{2,32}$/;

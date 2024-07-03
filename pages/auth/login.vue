@@ -5,7 +5,7 @@ import {Input} from "~/components/ui/input";
 import {Checkbox} from "~/components/ui/checkbox";
 import {toTypedSchema} from "@vee-validate/zod";
 import * as z from "zod";
-import {passwordRegExp, userRegExp} from "~/utils/regexp.utils";
+import {passwordRegExp, usernameRegExp} from "~/utils/regexp.utils";
 import {useLocalePath, useI18n} from "#i18n";
 import {type GenericObject} from "vee-validate";
 import {useToast} from "~/components/ui/toast";
@@ -23,7 +23,7 @@ useHead({
 });
 
 const schema = toTypedSchema(z.object({
-  username: z.string().min(1).regex(userRegExp),
+  username: z.string().min(1).regex(usernameRegExp),
   password: z.string().min(1).regex(passwordRegExp),
 }));
 const keepLoggedIn = ref<boolean>(true);

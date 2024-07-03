@@ -4,7 +4,7 @@ import * as z from "zod";
 import {toTypedSchema} from "@vee-validate/zod";
 import {Input} from "~/components/ui/input";
 import {FormField, FormItem, FormControl, FormLabel} from "~/components/ui/form";
-import {passwordRegExp, userRegExp} from "~/utils/regexp.utils";
+import {passwordRegExp, usernameRegExp} from "~/utils/regexp.utils";
 import type {GenericObject} from "vee-validate";
 import {useToast} from "~/components/ui/toast";
 
@@ -21,8 +21,8 @@ useHead({
 });
 
 const schema = toTypedSchema(z.object({
-  username: z.string().min(1).regex(userRegExp),
-  displayName: z.string().min(1),
+  username: z.string().min(1).regex(usernameRegExp),
+  displayName: z.string().min(1).regex(displayNameRegExp),
   email: z.string().email().min(1),
   password: z.string().min(1).regex(passwordRegExp),
 }));
