@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {Button} from "~/components/ui/button";
 import {LogOut, Settings, User} from "@iconoir/vue";
+import {useLocalePath} from "#i18n";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -10,6 +11,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuLabel
 } from "~/components/ui/dropdown-menu";
+
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -34,9 +37,11 @@ import {
       </DropdownMenuGroup>
       <DropdownMenuSeparator />
       <DropdownMenuGroup>
-        <DropdownMenuItem>
-          <Settings class="mr-2" />
-          <span>{{ $t("navigation.userDropdown.preferences") }}</span>
+        <DropdownMenuItem as-child>
+          <NuxtLink :to="localePath('/profile/preferences')">
+            <Settings class="mr-2" />
+            <span>{{ $t("navigation.userDropdown.preferences") }}</span>
+          </NuxtLink>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <LogOut class="mr-2" />
