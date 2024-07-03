@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {useSwitchLocalePath, useI18n} from "#i18n";
 import locales from "~/langs";
-import {Button} from "~/components/ui/button";
+import {Button, type ButtonVariants} from "~/components/ui/button";
 import {DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem} from "~/components/ui/dropdown-menu";
 import {NavArrowDown} from "@iconoir/vue";
 
@@ -10,6 +10,7 @@ type LocaleDisplayFormat = 'short' | 'long';
 const { format } = defineProps<{
   format?: LocaleDisplayFormat;
   disableArrow?: boolean;
+  variant?: ButtonVariants['variant'];
 }>();
 
 const switchLocale = useSwitchLocalePath();
@@ -21,7 +22,7 @@ const selectedLanguage = computed(_ => format === 'short' ? locale.value.toUpper
 <template>
   <DropdownMenu>
     <DropdownMenuTrigger>
-      <Button variant="ghost" :class="{ 'p-3': disableArrow }">
+      <Button :variant="variant ?? 'ghost'" :class="{ 'p-3': disableArrow }">
         <span>{{ selectedLanguage }}</span>
         <NavArrowDown v-if="!disableArrow" class="ml-2" />
       </Button>
