@@ -81,7 +81,7 @@ export default {
           keepMeLoggedIn: "Se souvenir de moi."
         },
         toasts: {
-          userCreated: {
+          userLoggedIn: {
             title: "Bon retour 🎉",
             description: "Ça faisait longtemps que nous ne vous avions pas vu ! Découvrez les derniers ajouts sur la plateforme 😊",
           }
