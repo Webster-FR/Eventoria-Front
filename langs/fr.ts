@@ -16,6 +16,7 @@ export default {
       previous: "Précédent",
       next: "Suivant",
       cancel: "Annuler",
+      loading: "Chargement...",
     }
   },
   navigation: {
@@ -136,6 +137,16 @@ export default {
       sections: {
         appearance: {
           title: "Apparence",
+          params: {
+            language: {
+              title: "Choix de la langue d'affichage",
+              description: "Sélectionnez la langue dans laquelle vous souhaitez afficher l'interface de l'application. Cela permet d'adapter les textes, menus et autres éléments textuels à la langue de votre choix pour une meilleure expérience utilisateur.",
+            },
+            theme: {
+              title: "Choix du thème",
+              description: "Sélectionnez le thème visuel de l'application selon vos préférences. Vous pouvez opter pour un thème clair pour une apparence lumineuse et épurée, ou un thème sombre pour une interface élégante et reposante pour les yeux. Cette personnalisation permet d'adapter l'apparence de l'application à votre confort visuel.",
+            }
+          }
         },
         security: {
           title: "Sécurité"
