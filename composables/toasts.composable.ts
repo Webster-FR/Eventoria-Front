@@ -1,7 +1,7 @@
 import {type ComposerTranslation} from "#i18n";
 import {useToast} from "~/components/ui/toast";
 
-const ISE_KEY = "generic.toasts.internalServerError";
+const ISE_KEY = "generics.toasts.internalServerError";
 
 export function useInternalErrorToast (t: ComposerTranslation) {
   useToast().toast({
