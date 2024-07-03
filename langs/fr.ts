@@ -130,6 +130,34 @@ export default {
           }
         },
       }
+    },
+    preferences: {
+      title: "Préférences",
+      sections: {
+        appearance: {
+          title: "Apparence",
+        },
+        security: {
+          title: "Sécurité"
+        },
+        authorizations: {
+          title: "Autorisations"
+        },
+        deleteAccount: {
+          title: "Supprimer mon compte",
+          dialog: {
+            title: "Êtes-vous sûr ?",
+            description: "Cette action ne peut être annulée. Elle supprimera définitivement votre compte et supprimera vos données de nos serveurs.",
+            action: "Supprimer mon compte",
+          },
+          toasts: {
+            accountDeleted: {
+              title: "Nous sommes navré de vous voir partir 😔",
+              description: "Votre compte a bien été supprimé de nos serveurs ! Nous vous souhaitons une bonne continuation.",
+            }
+          }
+        }
+      }
     }
   },
 }
