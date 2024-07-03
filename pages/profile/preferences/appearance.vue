@@ -32,7 +32,9 @@ const theme = computed(_ => useTheme());
           <PreferenceCardSectionDescription>{{ $t("pages.preferences.sections.appearance.params.language.description") }}</PreferenceCardSectionDescription>
         </PreferenceCardSectionContent>
 
-        <LangSelector variant="outline" format="long" />
+        <PreferenceCardSectionAction>
+          <LangSelector variant="outline" format="long" />
+        </PreferenceCardSectionAction>
       </PreferenceCardSection>
       <PreferenceCardSection>
         <PreferenceCardSectionContent>
