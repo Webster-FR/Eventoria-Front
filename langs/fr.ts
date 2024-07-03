@@ -15,6 +15,7 @@ export default {
       back: "Retour",
       previous: "Précédent",
       next: "Suivant",
+      cancel: "Annuler",
     }
   },
   navigation: {
