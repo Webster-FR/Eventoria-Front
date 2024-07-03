@@ -1,3 +1,9 @@
 <template>
-  <p class="text-sm text-muted-foreground"><slot /></p>
+  <p class="description"><slot /></p>
 </template>
+
+<style scoped lang="sass">
+.description
+  width: min(100%, 35rem)
+  @apply text-sm text-muted-foreground
+</style>

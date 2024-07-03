@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <Card class="flex-1">
+  <Card class="lg:flex-1">
     <CardHeader>
       <CardTitle><slot name="title" /></CardTitle>
     </CardHeader>
