@@ -74,3 +74,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .layout-wrapper {
+    width: min(100% - 3rem, 1240px);
+    @apply mx-auto
+  }
+}

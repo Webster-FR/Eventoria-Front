@@ -11,7 +11,7 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <div class="wrapper">
+  <div class="layout-wrapper">
     <header class="grid grid-cols-4 items-center justify-between sticky top-0 py-4 bg-background">
       <NuxtLink :to="localePath('/')">Eventoria</NuxtLink>
 
@@ -24,12 +24,11 @@ const localePath = useLocalePath();
 
         <template #fallback>
           <div class="flex justify-end items-center gap-1">
-            <UserDropdown />
-            <!-- <ThemeSelector />
+            <ThemeSelector />
             <LangSelector format="short" disable-arrow />
             <Button as-child>
               <NuxtLink :to="localePath('/auth/login')">{{ $t("navigation.cta") }}</NuxtLink>
-            </Button> -->
+            </Button>
           </div>
         </template>
       </UserProvider>
@@ -40,9 +39,3 @@ const localePath = useLocalePath();
     </main>
   </div>
 </template>
-
-<style scoped lang="sass">
-.wrapper
-  width: min(100% - 3rem, 1240px)
-  @apply mx-auto
-</style>
