@@ -11,8 +11,8 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 
 > **Legend**:  
 > ❌ -> Not done;  
-> ⏳ -> Waiting for the back-end;  
 > 🟠 -> In progress;  
+> ⏳ -> Waiting for the back-end;
 > ✅ -> Done.
 
 ### Authentication System
