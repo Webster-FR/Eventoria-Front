@@ -13,7 +13,7 @@ const deleteAccount = () => {
   toast({
     title: t("pages.preferences.sections.deleteAccount.toasts.accountDeleted.title"),
     description: t("pages.preferences.sections.deleteAccount.toasts.accountDeleted.description"),
-  })
+  });
 };
 </script>
 
