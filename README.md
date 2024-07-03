@@ -23,22 +23,22 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 > **Notes**:  
 > Think to handle e-mail sending.
 
-| Feature                | Done |
-|:-----------------------|:----:|
-| Banned emails          |  ❌   |
-| User registration      |  ⏳   |
-| Authentication         |  ⏳   |
-| OTP                    |  ⏳   |
-| Reset password         |  ⏳   |
-| Landing page           |  🟠  |
-| User profile           |  ❌   |
-| Settings               |  🟠  |
-| Settings: User name    |  ❌   |
-| Settings: Display name |  ❌   |
-| Settings: Password     |  ❌   |
-| Settings: Avatar       |  ❌   |
-| Settings: Language     |  ✅   |
-| Settings: Theme        |  ✅   |
+| Feature                | Statement |
+|:-----------------------|:---------:|
+| Banned emails          |     ❌     |
+| User registration      |     ⏳     |
+| Authentication         |     ⏳     |
+| OTP                    |     ⏳     |
+| Reset password         |     ⏳     |
+| Landing page           |    🟠     |
+| User profile           |     ❌     |
+| Settings               |    🟠     |
+| Settings: User name    |     ❌     |
+| Settings: Display name |     ❌     |
+| Settings: Password     |     ❌     |
+| Settings: Avatar       |     ❌     |
+| Settings: Language     |     ✅     |
+| Settings: Theme        |     ✅     |
 
 ### Pages & events
 **Deadlines**:
@@ -48,26 +48,26 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 > **Notes**:  
 > Think to send notifications.
 
-| Feature                 | Done |
-|:------------------------|:----:|
-| Page management         |  ❌   |
-| Commentary (pages)      |  ❌   |
-| Page reports            |  ❌   |
-| Admin actions on page   |  ❌   |
-| ---                     | ---  |
-| Event management        |  ❌   |
-| Commentary (events)     |  ❌   |
-| Event report            |  ❌   |
-| Participation indicator |  ❌   |
-| Admin actions on event  |  ❌   |
+| Feature                 | Statement |
+|:------------------------|:---------:|
+| Page management         |     ❌     |
+| Commentary (pages)      |     ❌     |
+| Page reports            |     ❌     |
+| Admin actions on page   |     ❌     |
+| ---                     |    ---    |
+| Event management        |     ❌     |
+| Commentary (events)     |     ❌     |
+| Event report            |     ❌     |
+| Participation indicator |     ❌     |
+| Admin actions on event  |     ❌     |
 
 ### Notifications
 **Deadlines**:
 - Front-End: `?`
 - Back-End: `?`
 
-| Feature                   | Done |
-|:--------------------------|:----:|
-| Different types           |  ❌   |
-| Detect when not read      |  ❌   |
-| Badge of amount on unread |  ❌   |
+| Feature                   | Statement |
+|:--------------------------|:---------:|
+| Different types           |     ❌     |
+| Detect when not read      |     ❌     |
+| Badge of amount on unread |     ❌     |
