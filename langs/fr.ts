@@ -17,6 +17,7 @@ export default {
       next: "Suivant",
       cancel: "Annuler",
       loading: "Chargement...",
+      updateConfirm: "Mettre à jour",
     }
   },
   navigation: {
@@ -135,6 +136,48 @@ export default {
     preferences: {
       title: "Préférences",
       sections: {
+        profile: {
+          title: "Mon profil",
+          params: {
+            userName: {
+              title: "Nom d'utilisateur",
+              description: "Votre nom d'utilisateur est utilisé pour vous connecter, partager facilement votre profil et par défaut si le nom d'affichage n'est pas défini.",
+              dialog: {
+                title: "Changer mon nom d'utilisateur",
+                description: "Cette action changera ton nom d'utilisateur sur toute la plateforme et tous les liens de partages envoyés depuis seront désormais invalides.",
+                input: {
+                  label: "Nouveau nom d'utilisateur",
+                  placeholder: "Ex : john.doe",
+                },
+                action: "Mettre à jour",
+              },
+              toasts: {
+                usernameUpdated: {
+                  title: "Félicitation 🎉",
+                  description: "Ton nom d'utilisateur a été changé ! Tout le monde t'identifiera désormais par \"%username\".",
+                }
+              }
+            },
+            displayName: {
+              title: "Nom d'affichage",
+              description: "Votre nom d'affichage est utilisé sur toute la plateforme pour vous représenter publiquement.",
+              dialog: {
+                title: "Changer mon nom d'affichage",
+                description: "Ceci défini votre identité sur la plateforme, prends le temps de te trouver un joli petit nom avant de le modifier.",
+                input: {
+                  label: "Nom d'affichage",
+                  placeholder: "Ex : John",
+                },
+              },
+              toasts: {
+                displayNameUpdated: {
+                  title: "Félicitation 🎉",
+                  description: "Ton nom d'affichage a été changé ! Tout le monde te verra désormais apparaître sous \"%displayName\".",
+                }
+              },
+            }
+          },
+        },
         appearance: {
           title: "Apparence",
           params: {
@@ -168,7 +211,6 @@ export default {
                   label: "Nouvelle adresse e-mail",
                   placeholder: "{'Ex : john.doe@exemple.fr'}"
                 },
-                action: "Mettre à jour",
               }
             },
             password: {
@@ -189,7 +231,6 @@ export default {
                   },
                   disconnect: "Déconnecter tous mes appareils.",
                 },
-                action: "Mettre à jour",
               },
               toasts: {
                 passwordChanged: {
@@ -203,9 +244,6 @@ export default {
               },
             }
           },
-        },
-        authorizations: {
-          title: "Autorisations"
         },
         deleteAccount: {
           title: "Supprimer mon compte",

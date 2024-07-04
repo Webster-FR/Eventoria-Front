@@ -23,31 +23,31 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 > **Notes**:  
 > Think to handle e-mail sending.
 
-| Feature                   | Statement |
-|:--------------------------|:---------:|
-| Banned emails             |     ❌     |
-| User registration         |     ⏳     |
-| Authentication            |     ⏳     |
-| OTP                       |     ⏳     |
-| Reset password            |     ⏳     |
-| ---                       |    ---    |
-| Landing page              |    🟠     |
-| ---                       |    ---    |
-| User profile              |     ❌     |
-| ---                       |    ---    |
-| Settings                  |    🟠     |
-| ---                       |    ---    |
-| Settings: User name       |     ❌     |
-| Settings: Display name    |     ❌     |
-| Settings: Avatar          |     ❌     |
-| Settings: Banner color    |     ❌     |
-| ---                       |    ---    |
-| Settings: Password        |     ⏳     |
-| Settings: Email           |     ⏳     |
-| Settings: Active sessions |     ❌     |
-| ---                       |    ---    |
-| Settings: Language        |     ✅     |
-| Settings: Theme           |     ✅     |
+| Feature                   | State |
+|:--------------------------|:-----:|
+| Banned emails             |   ❌   |
+| User registration         |   ⏳   |
+| Authentication            |   ⏳   |
+| OTP                       |   ⏳   |
+| Reset password            |   ⏳   |
+| ---                       |  ---  |
+| Landing page              |  🟠   |
+| ---                       |  ---  |
+| User profile              |   ❌   |
+| ---                       |  ---  |
+| Settings                  |  🟠   |
+| ---                       |  ---  |
+| Settings: User name       |   ⏳   |
+| Settings: Display name    |   ⏳   |
+| Settings: Avatar          |   ❌   |
+| Settings: Banner color    |   ❌   |
+| ---                       |  ---  |
+| Settings: Password        |   ⏳   |
+| Settings: Email           |   ⏳   |
+| Settings: Active sessions |   ❌   |
+| ---                       |  ---  |
+| Settings: Language        |   ✅   |
+| Settings: Theme           |   ✅   |
 
 ### Pages & events
 **Deadlines**:
@@ -57,26 +57,26 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 > **Notes**:  
 > Think to send notifications.
 
-| Feature                 | Statement |
-|:------------------------|:---------:|
-| Page management         |     ❌     |
-| Commentary (pages)      |     ❌     |
-| Page reports            |     ❌     |
-| Admin actions on page   |     ❌     |
-| ---                     |    ---    |
-| Event management        |     ❌     |
-| Commentary (events)     |     ❌     |
-| Event report            |     ❌     |
-| Participation indicator |     ❌     |
-| Admin actions on event  |     ❌     |
+| Feature                 | State |
+|:------------------------|:-----:|
+| Page management         |   ❌   |
+| Commentary (pages)      |   ❌   |
+| Page reports            |   ❌   |
+| Admin actions on page   |   ❌   |
+| ---                     |  ---  |
+| Event management        |   ❌   |
+| Commentary (events)     |   ❌   |
+| Event report            |   ❌   |
+| Participation indicator |   ❌   |
+| Admin actions on event  |   ❌   |
 
 ### Notifications
 **Deadlines**:
 - Front-End: `?`
 - Back-End: `?`
 
-| Feature                   | Statement |
-|:--------------------------|:---------:|
-| Different types           |     ❌     |
-| Detect when not read      |     ❌     |
-| Badge of amount on unread |     ❌     |
+| Feature                   | State |
+|:--------------------------|:-----:|
+| Different types           |   ❌   |
+| Detect when not read      |   ❌   |
+| Badge of amount on unread |   ❌   |
