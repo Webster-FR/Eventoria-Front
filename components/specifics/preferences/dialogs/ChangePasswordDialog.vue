@@ -85,7 +85,7 @@ const submit = handleSubmit(({ newPassword, confirm }) => {
 
         <DialogFooter class="mt-6 flex flex-col gap-3 md:flex-row">
           <Button type="button" @click="$emit('update:open', false)" variant="outline">{{ $t("generics.buttons.cancel") }}</Button>
-          <Button type="submit">{{ $t("pages.preferences.sections.security.params.password.dialog.action") }}</Button>
+          <Button type="submit">{{ $t("generics.buttons.updateConfirm") }}</Button>
         </DialogFooter>
       </form>
     </DialogContent>

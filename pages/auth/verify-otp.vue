@@ -46,7 +46,7 @@ const handleComplete = () => {
       <PinInput
           id="pin-input"
           v-model="value"
-          placeholder="·"
+          placeholder="○"
           @complete="handleComplete"
       >
         <PinInputGroup>
