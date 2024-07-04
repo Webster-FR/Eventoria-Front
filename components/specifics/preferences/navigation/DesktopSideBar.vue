@@ -12,14 +12,13 @@ const localePath = useLocalePath();
 
 <template>
   <Card class="hidden lg:block">
-    <CardHeader class="pt-3">
-      <Button variant="ghost" class="-ml-3 self-start mb-3" as-child>
+    <CardHeader class="pt-3 flex flex-row items-center gap-2">
+      <Button variant="ghost" class="-ml-3 p-3" as-child>
         <NuxtLink :to="localePath('/')">
-          <ArrowLeft class="mr-2" />
-          <span>{{ $t("generics.buttons.back") }}</span>
+          <ArrowLeft />
         </NuxtLink>
       </Button>
-      <CardTitle>Preferences</CardTitle>
+      <CardTitle>{{ $t("pages.preferences.title") }}</CardTitle>
     </CardHeader>
     <Separator />
     <CardContent class="flex flex-col gap-2 p-2 pt-6">

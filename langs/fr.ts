@@ -51,7 +51,7 @@ export default {
           },
           email: {
             label: "Adresse e-mail",
-            placeholder: "{'Ex : john.doe@exemple.com'}"
+            placeholder: "{'Ex : john.doe@exemple.fr'}"
           },
           password: {
             label: "Mot de passe",
@@ -149,7 +149,60 @@ export default {
           }
         },
         security: {
-          title: "Sécurité"
+          title: "Sécurité",
+          params: {
+            emailAddress: {
+              title: "Adresse e-mail",
+              description: "%(emailAddress)",
+              action: "Changer mon e-mail",
+              toasts: {
+                emailChanged: {
+                  title: "Félicitation 🎉",
+                  description: "Votre adresse e-mail a été changée avec succès. Un e-mail de vérification vous a été envoyé !"
+                }
+              },
+              dialog: {
+                title: "Changer mon e-mail",
+                description: "Cette action est définitive. Elle demandera une nouvelle vérification de votre compte.",
+                input: {
+                  label: "Nouvelle adresse e-mail",
+                  placeholder: "{'Ex : john.doe@exemple.fr'}"
+                },
+                action: "Mettre à jour",
+              }
+            },
+            password: {
+              title: "Mot de passe",
+              description: "Le mot de passe protège votre compte. Avoir un mot de passe fort réduit les risques de piratage.",
+              action: "Changer mon mot de passe",
+              dialog: {
+                title: "Changer mon mot de passe",
+                description: "Le mot de passe protège votre compte. Avoir un mot de passe fort réduit les risques de piratage.",
+                inputs: {
+                  newPassword: {
+                    label: "Nouveau mot de passe",
+                    placeholder: "Ex : ··········",
+                  },
+                  confirm: {
+                    label: "Confirmation",
+                    placeholder: "Ex : ··········",
+                  },
+                  disconnect: "Déconnecter tous mes appareils.",
+                },
+                action: "Mettre à jour",
+              },
+              toasts: {
+                passwordChanged: {
+                  title: "Félicitation 🎉",
+                  description: "Votre mot de passe a bien été changé ! Vous pourrez désormais vous connecter avec votre nouveau mot de passe.",
+                },
+                inconsistent: {
+                  title: "Oh non 💢",
+                  description: "Les mots de passes ne sont pas identiques ! Veuillez corriger l'erreur avant de réessayer.",
+                }
+              },
+            }
+          },
         },
         authorizations: {
           title: "Autorisations"

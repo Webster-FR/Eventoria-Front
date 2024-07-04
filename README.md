@@ -23,27 +23,31 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 > **Notes**:  
 > Think to handle e-mail sending.
 
-| Feature                | Statement |
-|:-----------------------|:---------:|
-| Banned emails          |     ❌     |
-| User registration      |     ⏳     |
-| Authentication         |     ⏳     |
-| OTP                    |     ⏳     |
-| Reset password         |     ⏳     |
-| ---                    |    ---    |
-| Landing page           |    🟠     |
-| ---                    |    ---    |
-| User profile           |     ❌     |
-| ---                    |    ---    |
-| Settings               |    🟠     |
-| ---                    |    ---    |
-| Settings: User name    |     ❌     |
-| Settings: Display name |     ❌     |
-| Settings: Password     |     ❌     |
-| Settings: Avatar       |     ❌     |
-| ---                    |    ---    |
-| Settings: Language     |     ✅     |
-| Settings: Theme        |     ✅     |
+| Feature                   | Statement |
+|:--------------------------|:---------:|
+| Banned emails             |     ❌     |
+| User registration         |     ⏳     |
+| Authentication            |     ⏳     |
+| OTP                       |     ⏳     |
+| Reset password            |     ⏳     |
+| ---                       |    ---    |
+| Landing page              |    🟠     |
+| ---                       |    ---    |
+| User profile              |     ❌     |
+| ---                       |    ---    |
+| Settings                  |    🟠     |
+| ---                       |    ---    |
+| Settings: User name       |     ❌     |
+| Settings: Display name    |     ❌     |
+| Settings: Avatar          |     ❌     |
+| Settings: Banner color    |     ❌     |
+| ---                       |    ---    |
+| Settings: Password        |     ⏳     |
+| Settings: Email           |     ⏳     |
+| Settings: Active sessions |     ❌     |
+| ---                       |    ---    |
+| Settings: Language        |     ✅     |
+| Settings: Theme           |     ✅     |
 
 ### Pages & events
 **Deadlines**:
