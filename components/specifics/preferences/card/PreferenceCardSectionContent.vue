@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <h1>Settings</h1>
+  <div class="flex flex-1 flex-col gap-1">
+    <slot />
+  </div>
 </template>
 
 <style scoped>

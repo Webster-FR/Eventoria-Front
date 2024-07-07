@@ -1,10 +1,11 @@
 <script setup lang="ts">
-const { params } = useRoute();
-const ulid = params.ulid;
+
 </script>
 
 <template>
-  <h1>User {{ ulid }}</h1>
+  <div class="flex flex-col gap-3 items-start">
+    <slot />
+  </div>
 </template>
 
 <style scoped>
