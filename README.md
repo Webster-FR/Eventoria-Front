@@ -33,7 +33,7 @@ All tasks must be delivered before or by the given deadline. Any delay will be f
 | ---                       |  ---  |
 | Landing page              |  🟠   |
 | ---                       |  ---  |
-| User profile              |   ❌   |
+| User profile              |  🟠   |
 | ---                       |  ---  |
 | Settings                  |  🟠   |
 | ---                       |  ---  |
