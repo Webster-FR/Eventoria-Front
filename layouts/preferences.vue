@@ -18,7 +18,7 @@ const deleteAccount = () => {
 </script>
 
 <template>
-  <div class="layout-wrapper flex flex-col gap-3 h-dvh py-6 lg:flex-row lg:items-start">
+  <div class="wrapper layout-wrapper flex flex-col gap-3 h-dvh py-6 lg:flex-row lg:items-start">
     <DesktopSideBar @askDelete="deleteModalOpened = true" />
     <MobileSideBar @askDelete="deleteModalOpened = true" />
 

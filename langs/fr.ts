@@ -18,6 +18,8 @@ export default {
       cancel: "Annuler",
       loading: "Chargement...",
       updateConfirm: "Mettre à jour",
+      seeMore: "Voir plus",
+      seeLess: "Voir moins",
     }
   },
   navigation: {
@@ -258,6 +260,16 @@ export default {
               description: "Votre compte a bien été supprimé de nos serveurs ! Nous vous souhaitons une bonne continuation.",
             }
           }
+        }
+      }
+    },
+    profile: {
+      title: "Mon profil",
+      "title-alt": "Profil de %user",
+      card: {
+        labels: {
+          bio: "Biographie",
+          networks: "Réseaux"
         }
       }
     }

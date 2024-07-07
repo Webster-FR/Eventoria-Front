@@ -11,11 +11,11 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <div class="layout-wrapper">
-    <header class="grid grid-cols-4 items-center justify-between sticky top-0 py-4 bg-background">
+  <div class="wrapper layout-wrapper">
+    <header class="wrapper navigation-wrapper">
       <NuxtLink :to="localePath('/')">Eventoria</NuxtLink>
 
-      <div class="hidden justify-center col-span-2 md:flex">
+      <div class="hidden justify-center col-span-2 lg:flex">
         <DesktopNavigation />
       </div>
 
@@ -34,7 +34,7 @@ const localePath = useLocalePath();
       </UserProvider>
     </header>
 
-    <main class="min-h-dvh">
+    <main class="md:pt-20 md:min-h-dvh">
       <slot />
     </main>
   </div>

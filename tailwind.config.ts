@@ -5,7 +5,7 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
-  
+
   theme: {
     container: {
       center: true,
@@ -15,6 +15,9 @@ module.exports = {
       },
     },
     extend: {
+      aspectRatio: {
+        banner: '2 / 1',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

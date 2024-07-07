@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', "@nuxtjs/i18n", "shadcn-nuxt"],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    "@nuxtjs/i18n",
+    "shadcn-nuxt",
+    "@nuxt/image"
+  ],
   devtools: { enabled: true },
   tailwindcss: {
     cssPath: ['assets/css/tailwind.css', { injectPosition: 'first' }],
@@ -19,5 +25,11 @@ export default defineNuxtConfig({
   shadcn: {
     prefix: '',
     componentDir: './components/ui'
-  }
+  },
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.API_BASE_URL,
+      imageBasePath: process.env.IMAGE_BASE_PATH,
+    }
+  },
 });
