@@ -12,7 +12,7 @@ const opened = ref<boolean>(false);
 </script>
 
 <template>
-  <Card class="w-full md:max-w-64 lg:max-w-80 md:sticky md:top-16">
+  <Card class="w-full md:max-w-64 lg:max-w-80 md:sticky md:top-20">
     <CardHeader class="gap-0 p-0">
       <span class="block w-full h-40 md:h-32 lg:h-40 bg-primary rounded-md" />
 
@@ -34,7 +34,7 @@ const opened = ref<boolean>(false);
       </UserCardHeader>
     </CardHeader>
 
-    <CardContent class="p-6 grid grid-rows-[0fr] md:grid-rows-[1fr] transition-all" :class="{ 'grid-rows-[1fr]': opened }">
+    <CardContent class="grid grid-rows-[0fr] md:grid-rows-[1fr] md:pt-6 transition-all" :class="{ 'grid-rows-[1fr] pt-6': opened }">
       <div class="overflow-hidden flex flex-col gap-5">
         <UserCardSection v-if="user.profileConfiguration.bio">
           <UserCardSectionBadge>
