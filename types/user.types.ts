@@ -15,6 +15,7 @@ export interface IProfileConfiguration {
   avatar?: IProfileAvatar;
   instagram?: string;
   facebook?: string;
+  twitter?: string;
 }
 
 export interface IProfileAvatar {

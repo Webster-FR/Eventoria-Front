@@ -272,6 +272,11 @@ export default {
           networks: "Réseaux"
         }
       }
+    },
+    page: {
+      card: {
+        cta: "Voir la page"
+      }
     }
   },
 }
