@@ -60,7 +60,9 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       width: {
-        mx25: "min(100%, 25rem)"
+        mx25: "min(100%, 25rem)",
+        wrapper: "min(100% - 3rem, 1240px)",
+        navigation: "min(100%, 1240px)",
       },
       keyframes: {
         "accordion-down": {

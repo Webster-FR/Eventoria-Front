@@ -76,13 +76,10 @@
 }
 
 @layer components {
-  .wrapper {
-    width: min(100% - 3rem, 1240px);
-  }
   .navigation-wrapper {
-    @apply grid grid-cols-4 items-center justify-between sticky md:fixed top-0 py-4 bg-background;
+    @apply w-navigation md:w-wrapper grid grid-cols-2 lg:grid-cols-4 items-center justify-between sticky md:fixed top-0 py-4 bg-background;
   }
   .layout-wrapper {
-    @apply mx-auto;
+    @apply w-wrapper mx-auto;
   }
 }

@@ -23,11 +23,10 @@ export default {
     }
   },
   navigation: {
-    cta: "Créer mon compte",
+    cta: "Nous rejoindre",
+    title: "Menu",
     links: {
-      explore: {
-        trigger: "Explorer"
-      },
+      explore: "Explorer",
       pricing: "Nos tarifs",
       about: "À propos"
     },
