@@ -3,10 +3,13 @@ import type {IUser} from "~/types/user.types";
 import type {IPage} from "~/types/page.types";
 import PageCard from "~/components/specifics/page/PageCard.vue";
 import {UserCard} from "~/components/specifics/user/profile-card";
+import type {IEvent} from "~/types/event.types";
+import EventList from "~/components/specifics/events/EventList.vue";
 
 defineProps<{
   user: IUser;
   page?: IPage;
+  events?: IEvent[];
 }>();
 </script>
 
@@ -16,7 +19,7 @@ defineProps<{
 
     <div class="flex-1 flex flex-col gap-6">
       <PageCard :page="page" v-if="page" />
-      <span>Todo: EVENTS</span>
+      <EventList :list="events ?? []" />
     </div>
   </div>
 </template>

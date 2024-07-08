@@ -3,6 +3,7 @@ import {useI18n} from "#i18n";
 import type {IUser} from "~/types/user.types";
 import type {IPage} from "~/types/page.types";
 import UserPage from "~/components/specifics/user/UserPage.vue";
+import type {IEvent} from "~/types/event.types";
 
 const { t } = useI18n();
 useHead({
@@ -22,7 +23,7 @@ const user: IUser = {
     bio: "Développeur et Web Designer Freelance, j'ai besoin de prendre l'air et de rencontrer du monde.",
     avatar: undefined,
     instagram: "ms.loic",
-    facebook: "maesloic2",
+    facebook: "loic.maes.5815",
     twitter: "LoicServices"
   }
 };
@@ -40,8 +41,59 @@ const page: IPage = {
   owner: user,
   comments: [],
 };
+const events: IEvent[] = [
+  {
+    ulid: "adefd-seses-seses-eses",
+    category: "cinema",
+    place: "21 rue Vincent Scotto, 67400 Illkirch-Graffenstaden",
+    participationMandatory: false,
+    name: "Pourquoi moi ?",
+    description: "Mais pourquoi moi ?",
+    tags: "coucou, pourquoi, moi",
+    hidden: false,
+
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    startsAt: new Date(),
+    endsAt: new Date(),
+  },
+  {
+    ulid: "adefd-seses-seses-eses",
+    category: "cinema",
+    place: "21 rue Vincent Scotto, 67400 Illkirch-Graffenstaden",
+    participationMandatory: false,
+    name: "Pourquoi toi ?",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae blanditiis consequuntur, dignissimos dolor dolorem doloremque doloribus eaque eius et exercitationem explicabo hic id inventore maxime natus neque non officia perferendis quos saepe vero voluptatibus? Ad asperiores blanditiis deleniti dolorem dolorum exercitationem ipsa itaque nam obcaecati perferendis possimus praesentium, sapiente!",
+    tags: "coucou, pourquoi, toi",
+    hidden: false,
+
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    startsAt: new Date(),
+    endsAt: new Date(),
+    cancelledAt: new Date(),
+  },
+  {
+    ulid: "adefd-seses-seses-eses",
+    category: "cinema",
+    place: "21 rue Vincent Scotto, 67400 Illkirch-Graffenstaden",
+    participationMandatory: false,
+    name: "Pourquoi pas nous?",
+    description: "Mais pourquoi pas nous ?",
+    tags: "coucou, pourquoi, nous",
+    hidden: false,
+
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    startsAt: new Date(),
+    endsAt: new Date(),
+    cancelledAt: new Date(),
+  }
+];
+
+if (navigator) console.log(navigator.userAgent);
 </script>
 
 <template>
-  <UserPage :user="user" :page="page" />
+  <UserPage :user="user" :page="page" :events="events" />
 </template>
