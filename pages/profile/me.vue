@@ -90,8 +90,6 @@ const events: IEvent[] = [
     cancelledAt: new Date(),
   }
 ];
-
-if (navigator) console.log(navigator.userAgent);
 </script>
 
 <template>
